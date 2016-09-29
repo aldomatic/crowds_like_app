@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DB425263BAF34D14661A9B3 /* Pods_crowds_like_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7093800CABBE45ED0DF46304 /* Pods_crowds_like_app.framework */; };
+		B61A32501D9D92070062EC2B /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A324F1D9D92070062EC2B /* Venues.swift */; };
 		B68740C91D9D75A4007E3531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68740C81D9D75A4007E3531 /* AppDelegate.swift */; };
 		B68740CB1D9D75A4007E3531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68740CA1D9D75A4007E3531 /* ViewController.swift */; };
 		B68740CE1D9D75A4007E3531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68740CC1D9D75A4007E3531 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D20912981C02E453857E95C /* Pods-crowds_like_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowds_like_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-crowds_like_app/Pods-crowds_like_app.release.xcconfig"; sourceTree = "<group>"; };
+		7093800CABBE45ED0DF46304 /* Pods_crowds_like_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowds_like_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EB42947895731895704DEE /* Pods-crowds_like_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowds_like_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crowds_like_app/Pods-crowds_like_app.debug.xcconfig"; sourceTree = "<group>"; };
+		B61A324F1D9D92070062EC2B /* Venues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
 		B68740C51D9D75A4007E3531 /* crowds_like_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crowds_like_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68740C81D9D75A4007E3531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B68740CA1D9D75A4007E3531 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB425263BAF34D14661A9B3 /* Pods_crowds_like_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		622CD7ECB7B2B686479FD0E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7093800CABBE45ED0DF46304 /* Pods_crowds_like_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2121A3BD0A90E198E4F510D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4EB42947895731895704DEE /* Pods-crowds_like_app.debug.xcconfig */,
+				4D20912981C02E453857E95C /* Pods-crowds_like_app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B61A32511D9D99130062EC2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B61A324F1D9D92070062EC2B /* Venues.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B68740BC1D9D75A4007E3531 = {
 			isa = PBXGroup;
 			children = (
 				B68740C71D9D75A4007E3531 /* crowds_like_app */,
 				B68740C61D9D75A4007E3531 /* Products */,
+				B2121A3BD0A90E198E4F510D /* Pods */,
+				622CD7ECB7B2B686479FD0E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +88,7 @@
 		B68740C71D9D75A4007E3531 /* crowds_like_app */ = {
 			isa = PBXGroup;
 			children = (
+				B61A32511D9D99130062EC2B /* Models */,
 				B68740C81D9D75A4007E3531 /* AppDelegate.swift */,
 				B68740CA1D9D75A4007E3531 /* ViewController.swift */,
 				B68740CC1D9D75A4007E3531 /* Main.storyboard */,
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B68740D71D9D75A4007E3531 /* Build configuration list for PBXNativeTarget "crowds_like_app" */;
 			buildPhases = (
+				CA4EC08FFFF42FAE04457815 /* [CP] Check Pods Manifest.lock */,
 				B68740C11D9D75A4007E3531 /* Sources */,
 				B68740C21D9D75A4007E3531 /* Frameworks */,
 				B68740C31D9D75A4007E3531 /* Resources */,
+				7EE9AEAB40F40B8FD8231B90 /* [CP] Embed Pods Frameworks */,
+				AA02172EF73FFBA311F06C11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +170,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EE9AEAB40F40B8FD8231B90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowds_like_app/Pods-crowds_like_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA02172EF73FFBA311F06C11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowds_like_app/Pods-crowds_like_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA4EC08FFFF42FAE04457815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B68740C11D9D75A4007E3531 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B68740CB1D9D75A4007E3531 /* ViewController.swift in Sources */,
+				B61A32501D9D92070062EC2B /* Venues.swift in Sources */,
 				B68740C91D9D75A4007E3531 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +269,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -204,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -231,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -247,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -257,26 +346,38 @@
 		};
 		B68740D81D9D75A4007E3531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EB42947895731895704DEE /* Pods-crowds_like_app.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BBFCPF47ZM;
 				INFOPLIST_FILE = crowds_like_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "come.aldomatic.crowds-like-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B68740D91D9D75A4007E3531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D20912981C02E453857E95C /* Pods-crowds_like_app.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BBFCPF47ZM;
 				INFOPLIST_FILE = crowds_like_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "come.aldomatic.crowds-like-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +401,7 @@
 				B68740D91D9D75A4007E3531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
